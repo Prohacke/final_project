@@ -1,9 +1,97 @@
 <html>
 <head>
+<body background="http://www.dynamicviz.com/images/background/bg_coming_soon.jpg">
 <h1>Викторина</h1>
+<style type="text/css">
+    .Click_Back {
+    -moz-box-shadow:inset 0px 0px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 0px 0px 0px #54a3f7;
+    box-shadow:inset 0px 0px 0px 0px #54a3f7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+    background-color:#007dc1;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:2px solid #124d77;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Verdana;
+    font-size:23px;
+    font-weight:bold;
+    font-style:italic;
+    padding:12px 31px;
+    text-decoration:none;
+    text-shadow:0px 3px 0px #154682;
+}
+.Click_Back:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+    background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+    background-color:#0061a7;
+}
+.Click_Back:active {
+    position:relative;
+    top:1px;
+}
+
+</style>
+<style type="text/css">.Intsr {
+    -moz-box-shadow:inset 0px -1px 3px 0px #91b8b3;
+    -webkit-box-shadow:inset 0px -1px 3px 0px #91b8b3;
+    box-shadow:inset 0px -1px 3px 0px #91b8b3;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #d3ebeb));
+    background:-moz-linear-gradient(top, #768d87 5%, #d3ebeb 100%);
+    background:-webkit-linear-gradient(top, #768d87 5%, #d3ebeb 100%);
+    background:-o-linear-gradient(top, #768d87 5%, #d3ebeb 100%);
+    background:-ms-linear-gradient(top, #768d87 5%, #d3ebeb 100%);
+    background:linear-gradient(to bottom, #768d87 5%, #d3ebeb 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#d3ebeb',GradientType=0);
+    background-color:#768d87;
+    -moz-border-radius:9px;
+    -webkit-border-radius:9px;
+    border-radius:9px;
+    border:2px solid #90a8a0;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Verdana;
+    font-size:23px;
+    font-weight:bold;
+    font-style:italic;
+    padding:14px 30px;
+    text-decoration:none;
+    text-shadow:0px 3px 0px #2b665e;
+}
+.Intsr:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d3ebeb), color-stop(1, #768d87));
+    background:-moz-linear-gradient(top, #d3ebeb 5%, #768d87 100%);
+    background:-webkit-linear-gradient(top, #d3ebeb 5%, #768d87 100%);
+    background:-o-linear-gradient(top, #d3ebeb 5%, #768d87 100%);
+    background:-ms-linear-gradient(top, #d3ebeb 5%, #768d87 100%);
+    background:linear-gradient(to bottom, #d3ebeb 5%, #768d87 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3ebeb', endColorstr='#768d87',GradientType=0);
+    background-color:#d3ebeb;
+}
+.Intsr:active {
+    position:relative;
+    top:1px;
+}
+
+</style>
 <meta charset="UTF-8">
 </head>
-<body bgcolor=#EC6A0D>
+
 <body>
 <script type="text/javascript" language="JavaScript">// <![CDATA[
  var res="34251"; 
@@ -76,7 +164,7 @@ function showhide(obj){
 // ]]>
 </script>
 <center><b>Опрос </b></center><br/><br/>
-&nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
+&nbsp;&nbsp;&nbsp;<span class="Intsr" style="color:#006699;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
 Инструкция</span>
  <br/>
 <div id="instruction" style="display: none; width: 100%;">
@@ -126,7 +214,11 @@ function showhide(obj){
 <P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
 <INPUT onclick="check_me()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp; 
 <INPUT type="reset" value="Сбросить ответы"/> 
-</CENTER>        
+</CENTER>
+<a href="Main_menu.html" class="Click_Back">В гл. Меню</a>
+<table class="tftable" border="0" align="bottom">
+<tr><th><a href="add1.html"><img src="http://boxmir.com/images/shkola_boxa/praktika/podtyagivanie-na-turnike-polza/podtyagivaniya-na-turnike.jpg"></a></th><th><a href="add2.html"><img src="http://mtdata.ru/u21/photoE08E/20242324708-0/original.jpg"></a></th><th><a href="antitrubach_firewall.html"><img src="antitrubach.jpg"></a></th><th><a href="add4.html"><img src="https://pp.vk.me/c308523/v308523095/8c39/10PIeOa4CzE.jpg"></a></th></tr><tr><td align="center"><a href="add1.html">Мировой рекордсмен делится секретом сдачи ГТО</a></td><td align="center"><a href="add2.html">Самый умный человек на планете рассказывает как получить 5 у Бородиной</a></td><td align="center"><a href="antitrubach_firewall.html">ANTITRUBACH_FIREWALL продолжает <br>терроризировать все сайты мира, включая...</a></td><tr><td><a href="add4.html">Здесь могла быть ваша реклама</a></td></tr>
+</table>        
 </form> 
 </body>
 </html>
